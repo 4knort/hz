@@ -2,7 +2,7 @@
   "name": "colorizr",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development node scripts/start",
+    "start": "node scripts/start",
     "build": "npm run clean && cross-env NODE_ENV=production webpack --progress --colors",
     "pages:build": "npm run clean && cross-env NODE_ENV=production BUILD=pages webpack --progress --colors",
     "pages:deploy": "npm run pages:build && gh-pages -d public",
@@ -20,9 +20,7 @@
     "react-router": "^3.0.0",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "warna": "^0.2.4"
-  },
-  "devDependencies": {
+    "warna": "^0.2.4",
     "react-apollo": "^0.10.0",
     "apollo-client": "^0.8.2",
     "axios": "^0.15.3",
